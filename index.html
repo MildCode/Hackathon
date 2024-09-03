@@ -1,106 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Management System</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Management System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><i class="fas fa-hospital"></i> Healthcare Management System</h1>
-            <nav>
-                <ul>
-                    <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                    <li><a href="#appointments"><i class="fas fa-calendar-plus"></i> Book Appointment</a></li>
-                    <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Healthcare System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#doctors">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#appointments">Book Appointment</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Your Healthcare Management System</h2>
-            <p>Manage your health seamlessly with our easy-to-use system.</p>
-            <a href="#appointments" class="btn-primary">Book an Appointment</a>
-        </div>
+  <header class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to Our Healthcare System</h1>
+      <p class="lead">Providing quality care with efficiency and compassion</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section id="patient-records">
+      <h2 class="mb-4">Patient Records</h2>
+      <div id="patients-list" class="row">
+        <!-- Patient records will be injected here -->
+      </div>
     </section>
 
-    <main>
-        <div class="container">
-            <section id="dashboard">
-                <h2><i class="fas fa-home"></i> Patient Dashboard</h2>
-                <div class="cards-container">
-                    <div class="card">
-                        <img src="doctor1.jpg" alt="Dr. Smith" class="card-img">
-                        <div class="card-body">
-                            <h3>Dr. Smith</h3>
-                            <p>Specialty: Cardiologist</p>
-                            <p>Next Appointment: September 10, 2024 - 10:00 AM</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="doctor2.jpg" alt="Nurse Jones" class="card-img">
-                        <div class="card-body">
-                            <h3>Nurse Jones</h3>
-                            <p>Specialty: General Nursing</p>
-                            <p>Next Follow-up: September 20, 2024 - 2:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <hr class="my-5">
 
-            <section id="appointments">
-                <h2><i class="fas fa-calendar-alt"></i> Book an Appointment</h2>
-                <form action="/submit-appointment" method="post">
-                    <label for="doctor">Select Doctor:</label>
-                    <select id="doctor" name="doctor">
-                        <option value="smith">Dr. Smith</option>
-                        <option value="jones">Dr. Jones</option>
-                        <!-- Add more doctors as needed -->
-                    </select>
+    <section id="doctors">
+      <h2 class="mb-4">Meet Our Doctors</h2>
+      <div class="row">
+        <!-- Doctor profiles will be injected here -->
+      </div>
+    </section>
 
-                    <label for="date">Select Date:</label>
-                    <input type="date" id="date" name="date" required>
+    <hr class="my-5">
 
-                    <label for="time">Select Time:</label>
-                    <input type="time" id="time" name="time" required>
-
-                    <input type="submit" value="Book Appointment">
-                </form>
-            </section>
-
-            <section id="profile">
-                <h2><i class="fas fa-user-cog"></i> Your Profile</h2>
-                <div class="profile-info">
-                    <p>Name: [Patient Name]</p>
-                    <p>Email: [Patient Email]</p>
-                    <p>Phone: [Patient Phone]</p>
-                    <p>Address: [Patient Address]</p>
-                </div>
-            </section>
+    <section id="services">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://www.swaconhospital.com/wp-content/uploads/2019/09/34-5-reasons-why-you-need-a-regular-checkup-feat-1080x600.jpg" class="card-img-top" alt="Service 1">
+            <div class="card-body">
+              <h5 class="card-title">General Checkup</h5>
+              <p class="card-text">Comprehensive health checks to ensure you stay healthy.</p>
+            </div>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Healthcare Management System. All rights reserved.</p>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjvhnsb8PVt3UOMFq-L1iGeBmlOHGQi9IcNKNnpfSWmN5gZrSKEpvnZXvJX_n2cQMCug&usqp=CAU" alt="Service 2">
+            <div class="card-body">
+              <h5 class="card-title">Emergency Care</h5>
+              <p class="card-text">24/7 emergency services for critical situations.</p>
+            </div>
+          </div>
         </div>
-    </footer>
-
-    <!-- Modal Template -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>More Information</h2>
-            <p>Details about the selected doctor or service.</p>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEu-b4Co7S15w7Rmq1-uS6-pk0zGuzdJQSuA&s" class="card-img-topg" class="card-img-top" alt="Service 3">
+            <div class="card-body">
+              <h5 class="card-title">Surgical Procedures</h5>
+              <p class="card-text">Advanced surgical procedures with state-of-the-art technology.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="appointments">
+      <h2 class="mb-4">Book an Appointment</h2>
+      <form id="appointment-form">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="patientName">Name</label>
+            <input type="text" class="form-control" id="patientName" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="appointmentDate">Date</label>
+            <input type="date" class="form-control" id="appointmentDate" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Book Appointment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">© 2024 Healthcare System. All rights reserved.</p>
     </div>
+  </footer>
 
-    <script src="scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
