@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Healthcare System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +33,7 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <header class="hero bg-primary text-white text-center py-5">
     <div class="container">
       <h1 class="display-4">Welcome to Our Healthcare System</h1>
@@ -39,49 +41,56 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="container my-5">
+    <!-- Patient Records Section -->
     <section id="patient-records">
       <h2 class="mb-4">Patient Records</h2>
       <div id="patients-list" class="row">
-        <!-- Patient records will be injected here -->
+        <!-- Patient records will be dynamically injected here -->
       </div>
     </section>
 
     <hr class="my-5">
 
+    <!-- Doctors Section -->
     <section id="doctors">
       <h2 class="mb-4">Meet Our Doctors</h2>
       <div class="row">
-        <!-- Doctor profiles will be injected here -->
+        <!-- Doctor profiles will be dynamically injected here -->
       </div>
     </section>
 
     <hr class="my-5">
 
+    <!-- Services Section -->
     <section id="services">
       <h2 class="mb-4">Our Services</h2>
       <div class="row">
+        <!-- Service 1 -->
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="https://www.swaconhospital.com/wp-content/uploads/2019/09/34-5-reasons-why-you-need-a-regular-checkup-feat-1080x600.jpg" class="card-img-top" alt="Service 1">
+            <img src="https://www.swaconhospital.com/wp-content/uploads/2019/09/34-5-reasons-why-you-need-a-regular-checkup-feat-1080x600.jpg" class="card-img-top" alt="General Checkup">
             <div class="card-body">
               <h5 class="card-title">General Checkup</h5>
               <p class="card-text">Comprehensive health checks to ensure you stay healthy.</p>
             </div>
           </div>
         </div>
+        <!-- Service 2 -->
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjvhnsb8PVt3UOMFq-L1iGeBmlOHGQi9IcNKNnpfSWmN5gZrSKEpvnZXvJX_n2cQMCug&usqp=CAU" alt="Service 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjvhnsb8PVt3UOMFq-L1iGeBmlOHGQi9IcNKNnpfSWmN5gZrSKEpvnZXvJX_n2cQMCug&usqp=CAU" class="card-img-top" alt="Emergency Care">
             <div class="card-body">
               <h5 class="card-title">Emergency Care</h5>
               <p class="card-text">24/7 emergency services for critical situations.</p>
             </div>
           </div>
         </div>
+        <!-- Service 3 -->
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEu-b4Co7S15w7Rmq1-uS6-pk0zGuzdJQSuA&s" class="card-img-topg" class="card-img-top" alt="Service 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEu-b4Co7S15w7Rmq1-uS6-pk0zGuzdJQSuA&s" class="card-img-top" alt="Surgical Procedures">
             <div class="card-body">
               <h5 class="card-title">Surgical Procedures</h5>
               <p class="card-text">Advanced surgical procedures with state-of-the-art technology.</p>
@@ -93,6 +102,7 @@
 
     <hr class="my-5">
 
+    <!-- Appointment Booking Section -->
     <section id="appointments">
       <h2 class="mb-4">Book an Appointment</h2>
       <form id="appointment-form">
@@ -111,12 +121,14 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-light py-4">
     <div class="container text-center">
       <p class="mb-0">© 2024 Healthcare System. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
