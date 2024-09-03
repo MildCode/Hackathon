@@ -1,1 +1,106 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-hospital"></i> Healthcare Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#appointments"><i class="fas fa-calendar-plus"></i> Book Appointment</a></li>
+                    <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Your Healthcare Management System</h2>
+            <p>Manage your health seamlessly with our easy-to-use system.</p>
+            <a href="#appointments" class="btn-primary">Book an Appointment</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="dashboard">
+                <h2><i class="fas fa-home"></i> Patient Dashboard</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="doctor1.jpg" alt="Dr. Smith" class="card-img">
+                        <div class="card-body">
+                            <h3>Dr. Smith</h3>
+                            <p>Specialty: Cardiologist</p>
+                            <p>Next Appointment: September 10, 2024 - 10:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="doctor2.jpg" alt="Nurse Jones" class="card-img">
+                        <div class="card-body">
+                            <h3>Nurse Jones</h3>
+                            <p>Specialty: General Nursing</p>
+                            <p>Next Follow-up: September 20, 2024 - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="appointments">
+                <h2><i class="fas fa-calendar-alt"></i> Book an Appointment</h2>
+                <form action="/submit-appointment" method="post">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor">
+                        <option value="smith">Dr. Smith</option>
+                        <option value="jones">Dr. Jones</option>
+                        <!-- Add more doctors as needed -->
+                    </select>
+
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <input type="submit" value="Book Appointment">
+                </form>
+            </section>
+
+            <section id="profile">
+                <h2><i class="fas fa-user-cog"></i> Your Profile</h2>
+                <div class="profile-info">
+                    <p>Name: [Patient Name]</p>
+                    <p>Email: [Patient Email]</p>
+                    <p>Phone: [Patient Phone]</p>
+                    <p>Address: [Patient Address]</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Healthcare Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>More Information</h2>
+            <p>Details about the selected doctor or service.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
