@@ -1,46 +1,46 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Fetch patient data from WordPress REST API
-  fetch('https://your-wordpress-site.com/wp-json/wp/v2/patients')
-    .then(response => response.json())
-    .then(data => {
-      const patientsList = document.getElementById('patients-list');
-      patientsList.innerHTML = data.map(patient => `
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">${patient.title.rendered}</h5>
-              <p class="card-text">Condition: ${patient.acf.medical_condition}</p>
-            </div>
-          </div>
-        </div>
-      `).join('');
-    })
-    .catch(error => console.error('Error fetching patient data:', error));
+document.addEventListener('DOMContentLoaded', () => {
+  const appointmentForm = document.getElementById('appointment-form');
 
-  // Handle appointment form submission
-  document.getElementById('appointment-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
+  // Handle form submission for booking appointments
+  appointmentForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the default form submission
     const name = document.getElementById('patientName').value;
     const date = document.getElementById('appointmentDate').value;
 
-    // Send appointment data to WordPress REST API
-    fetch('https://your-wordpress-site.com/wp-json/wp/v2/appointments', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_AUTH_TOKEN' // if needed
-      },
-      body: JSON.stringify({
-        title: name,
-        date: date,
-      })
-    })
-    .then(response => response.json())
-    .then(data => {
-      alert('Appointment booked successfully!');
-      document.getElementById('appointment-form').reset();
-    })
-    .catch(error => console.error('Error booking appointment:', error));
+    if (name && date) {
+      alert(`Appointment booked for ${name} on ${date}`);
+      appointmentForm.reset();
+    } else {
+      alert('Please fill in all fields');
+    }
+  });
+
+  // Example: Adding dynamic content to Doctors Section (Placeholder for dynamic data)
+  const doctorsSection = document.querySelector('#doctors .row');
+  const doctors = [
+    {
+      name: 'Dr. John Doe',
+      specialty: 'Cardiologist',
+      image: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Dr. Jane Smith',
+      specialty: 'Neurologist',
+      image: 'https://via.placeholder.com/150',
+    },
+  ];
+
+  doctors.forEach((doctor) => {
+    const doctorCard = document.createElement('div');
+    doctorCard.className = 'col-md-6 mb-4';
+    doctorCard.innerHTML = `
+      <div class="card">
+        <img src="${doctor.image}" class="card-img-top" alt="${doctor.name}">
+        <div class="card-body">
+          <h5 class="card-title">${doctor.name}</h5>
+          <p class="card-text">${doctor.specialty}</p>
+        </div>
+      </div>`;
+    doctorsSection.appendChild(doctorCard);
   });
 });
