@@ -26,6 +26,7 @@
                     <i class="fas fa-heartbeat"></i>
                     <h3>Cardiology</h3>
                     <p>Comprehensive heart care services.</p>
+                    
                 </div>
                 <div class="service-card">
                     <i class="fas fa-brain"></i>
@@ -51,18 +52,21 @@
                     <h3>Dr. Vikram Kalra</h3>
                     <p>Nephrologist</p>
                     <p>Experience: 27 years</p>
+                    <button onclick="openBookingForm('Dr. Vikram kalra')">Book an Appointment</button>
                 </div>
                 <div class="doctor-card">
                     <img src="vivek-vij.png" alt="Dr. suresh">
                     <h3>Dr. Vivek Vij</h3>
                     <p>Liver Transplant & HPB Surgeon</p>
                     <p>Experience: 24 years</p>
+                    <button onclick="openBookingForm('Dr. Vivek vij')">Book an Appointment</button>
                 </div>
                 <div class="doctor-card">
                     <img src="shilpa-ghosh.png" alt="Dr. shilpa">
                     <h3>Dr. Shilpa Ghosh</h3>
                     <p>Gynecology</p>
                     <p>Experience: 25 years</p>
+                    <button onclick="openBookingForm('Dr. shilpa ghosh')">Book an Appointment</button>
                 </div>
                 <!-- Add more doctors as needed -->
             </div>
@@ -139,6 +143,22 @@
         </div>
         <p>&copy; 2024 Advanced Healthcare Management System. All rights reserved.</p>
     </footer>
+    <!-- Appointment Form Modal -->
+    <div id="appointment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeBookingForm()">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <input type="text" id="patient-name" name="patient-name" placeholder="Patient's Name" required>
+                <input type="email" id="patient-email" name="patient-email" placeholder="Patient's Email" required>
+                <input type="text" id="patient-phone" name="patient-phone" placeholder="Patient's Phone Number" required>
+                <input type="text" id="doctor-name" name="doctor-name" readonly>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
