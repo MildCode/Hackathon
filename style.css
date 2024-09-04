@@ -291,14 +291,14 @@ header p {
 /* Services Section */
 .services {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #edf6f9;
 }
 
 .services h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
-    color: #fff;
+    color: #006d77;
 }
 
 .service-cards {
@@ -308,7 +308,7 @@ header p {
 }
 
 .service-card {
-    background-color:  #fff;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -318,25 +318,24 @@ header p {
 
 .service-card i {
     font-size: 50px;
-    color: #fff;
+    color: #006d77;
     margin-bottom: 15px;
 }
 
 .service-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color:  #006d77;
+    color: #333;
 }
 
 .service-card p {
     font-size: 16px;
-    color:  #006d77;
+    color: #666;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
 }
-
 /* Doctors Section */
 .doctors {
     padding: 60px 20px;
