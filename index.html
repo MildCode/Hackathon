@@ -83,7 +83,7 @@
                     <p>We prioritize patient care, offering personalized and compassionate services to ensure your health and well-being.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/about.jpg" alt="About Us">
+                    <img src="about us.jfif" alt="About Us">
                 </div>
             </div>
         </div>
@@ -122,6 +122,23 @@
             </form>
         </div>
     </section>
+     <!-- Appointment Form Modal -->
+    <div id="appointment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeBookingForm()">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <input type="text" id="patient-name" name="patient-name" placeholder="Patient's Name" required>
+                <input type="email" id="patient-email" name="patient-email" placeholder="Patient's Email" required>
+                <input type="text" id="patient-phone" name="patient-phone" placeholder="Patient's Phone Number" required>
+                <input type="text" id="doctor-name" name="doctor-name" readonly>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
 
     <!-- Footer Section -->
     <footer>
@@ -143,23 +160,7 @@
         </div>
         <p>&copy; 2024 Advanced Healthcare Management System. All rights reserved.</p>
     </footer>
-    <!-- Appointment Form Modal -->
-    <div id="appointment-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeBookingForm()">&times;</span>
-            <h2>Book an Appointment</h2>
-            <form id="appointment-form">
-                <input type="text" id="patient-name" name="patient-name" placeholder="Patient's Name" required>
-                <input type="email" id="patient-email" name="patient-email" placeholder="Patient's Email" required>
-                <input type="text" id="patient-phone" name="patient-phone" placeholder="Patient's Phone Number" required>
-                <input type="text" id="doctor-name" name="doctor-name" readonly>
-                <input type="date" id="appointment-date" name="appointment-date" required>
-                <input type="time" id="appointment-time" name="appointment-time" required>
-                <button type="submit">Book Appointment</button>
-            </form>
-        </div>
-    </div>
-
+   
     <script src="script.js"></script>
 </body>
 </html>
