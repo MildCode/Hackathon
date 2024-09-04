@@ -1,3 +1,5 @@
+
+
 // Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -23,3 +25,25 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     alert('Message sent successfully!');
     this.reset();
 });
+// Open Appointment Form Modal
+function openBookingForm(doctorName) {
+    document.getElementById('appointment-modal').style.display = 'block';
+    document.getElementById('doctor-name').value = doctorName;
+}
+
+// Close Appointment Form Modal
+function closeBookingForm() {
+    document.getElementById('appointment-modal').style.display = 'none';
+}
+
+// Handle Form Submission
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Appointment booked successfully!');
+    closeBookingForm();
+});
+
+// Scroll to Section
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
