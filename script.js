@@ -1,49 +1,17 @@
-
-
-// Smooth scrolling for navigation
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Form validation
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = this.querySelector('input[placeholder="Your Name"]').value.trim();
-    const email = this.querySelector('input[placeholder="Your Email"]').value.trim();
-    const message = this.querySelector('textarea').value.trim();
-
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields.');
-        return;
-    }
-
-    alert('Message sent successfully!');
-    this.reset();
-});
-// Open Appointment Form Modal
+// Function to open the booking form modal and set the doctor's name
 function openBookingForm(doctorName) {
-    document.getElementById('appointment-modal').style.display = 'block';
     document.getElementById('doctor-name').value = doctorName;
+    document.getElementById('appointment-modal').style.display = 'block';
 }
 
-// Close Appointment Form Modal
+// Function to close the booking form modal
 function closeBookingForm() {
     document.getElementById('appointment-modal').style.display = 'none';
 }
 
-// Handle Form Submission
-document.getElementById('appointment-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Appointment booked successfully!');
-    closeBookingForm();
-});
-
-// Scroll to Section
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+    if (event.target == document.getElementById('appointment-modal')) {
+        closeBookingForm();
+    }
 }
