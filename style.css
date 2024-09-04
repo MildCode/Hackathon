@@ -291,14 +291,14 @@ header p {
 /* Services Section */
 .services {
     padding: 60px 20px;
-    background-color: #edf6f9;
+    background-color: #fff;
 }
 
 .services h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
-    color: #006d77;
+    color: #fff;
 }
 
 .service-cards {
@@ -308,7 +308,7 @@ header p {
 }
 
 .service-card {
-    background-color:  #006d77;
+    background-color:  #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -318,7 +318,7 @@ header p {
 
 .service-card i {
     font-size: 50px;
-    color: #006d77;
+    color: #fff;
     margin-bottom: 15px;
 }
 
