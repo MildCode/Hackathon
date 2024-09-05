@@ -151,7 +151,7 @@ header p {
 
 .about-image {
     width: 25%; /* Image takes up less space */
-    margin-left: 20px; /* Adds some spacing between the image and text */
+    margin-right: 40px; /* Adds some spacing between the image and text */
 }
 
 .about-image img {
