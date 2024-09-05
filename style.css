@@ -52,10 +52,11 @@ header p {
 
 /* Services Section */
 .services {
-    padding: 50px ;
+    padding: 50px 0;
     text-align: center;
 }
 .HeaderText{
+    padding: 5% 0;
     transform: translateY(17%);
 }
 .services h2 {
