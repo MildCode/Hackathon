@@ -222,6 +222,7 @@ header p {
 #qr-code-section img {
     max-width: 200px;
     margin: 20px 0;
+    align: center;
 }
 
 /* Footer */
