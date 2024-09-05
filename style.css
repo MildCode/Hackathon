@@ -44,6 +44,7 @@ header p {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    transform: translateY(-3%);
 }
 
 .btn-primary:hover {
