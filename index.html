@@ -102,22 +102,24 @@
     </section>
     
     <!-- Appointment Form Modal -->
-    <div id="appointment-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeBookingForm()">&times;</span>
-            <h2>Book an Appointment</h2>
-            <form id="appointment-form">
-                <input type="text" id="patient-name" name="patient-name" placeholder="Patient's Name" required>
-                <input type="email" id="patient-email" name="patient-email" placeholder="Patient's Email" required>
-                <input type="text" id="patient-phone" name="patient-phone" placeholder="Patient's Phone Number" required>
-                <input type="text" id="doctor-name" name="doctor-name" readonly>
-                <input type="date" id="appointment-date" name="appointment-date" required>
-                <input type="time" id="appointment-time" name="appointment-time" required>
-                <button type="submit">Book Appointment</button>
-            </form>
+<div id="appointment-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeBookingForm()">&times;</span>
+        <h2>Book an Appointment</h2>
+
+        <!-- QR Code Section -->
+        <div id="qr-code-section">
+            <p>Scan the QR code to complete your appointment details:</p>
+            <<a href="https://form.jotform.com/242478512080454" rel="no-follow"><img src="https://www.jotform.com/uploads/jaydholi20102007/form_files/242478512080454_1725501825_qrcode_muse.png" width="100%" style="max-width: 200px" alt="QR Code for Jotform form"/></a>
+        </div>
+
+        <!-- Confirmation Message (Initially Hidden) -->
+        <div id="confirmation-message" style="display: none;">
+            <h3>Your appointment has been booked!</h3>
+            <p>Thank you for submitting your details. We will contact you soon.</p>
         </div>
     </div>
-
+</div>
 
 
     <!-- Footer Section -->
