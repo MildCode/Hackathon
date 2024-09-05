@@ -219,11 +219,39 @@ header p {
     cursor: pointer;
 }
 
-#qr-code-section img {
-    max-width: 200px;
-    margin: 20px 0;
-    align: center;
+.qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height to center vertically */
+    background-color: #f5f5f5; /* Light background for better visibility */
 }
+
+.qr-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.qr-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.qr h3 {
+    font-size: 20px;
+    color: #333;
+}
+
 
 /* Footer */
 footer {
