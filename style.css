@@ -133,21 +133,17 @@ header p {
 
 .about-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column; /* Stacks the text and image vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text */
 }
 
-.about-text {
-    flex: 1;
-    padding: 20px;
-}
-
-.about-image img {
-    max-width: 100%;
+.about-image {
+    margin-top: 20px; /* Adds space between the text and the image */
+    max-width: 100%; /* Ensures the image is responsive */
     height: auto;
-    border-radius: 10px;
 }
+
 
 @media (max-width: 768px) {
     .about-content {
