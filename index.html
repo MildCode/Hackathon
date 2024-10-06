@@ -9,131 +9,235 @@
 </head>
 <body>
     <!-- Header Section -->
-    
     <header>
         <div class="container">
             <h1>Advanced Healthcare Management System</h1>
-         
-            
-            <p class = "HeaderText">Your health, our priority.</p>
-            
+            <p class="HeaderText">Your health, our priority.</p>
             <a href="#services" class="btn-primary">Explore Services</a>
         </div>
     </header>
 
-   <section id="services" class="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <i class="fas fa-stethoscope"></i> <!-- Updated icon for Nephrology -->
-                <h3>Nephrology</h3>
-                <p>Comprehensive kidney care services.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-clinic-medical"></i> <!-- Alternative icon for Liver Transplant -->
-                <h3>Liver Transplant & HPB Surgery</h3>
-                <p>Expert liver care and transplant services.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-female"></i> <!-- Updated icon for Gynecology -->
-                <h3>Gynecology</h3>
-                <p>Healthcare services for women.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Nephrology</h3>
+                    <p>Comprehensive kidney care services.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-clinic-medical"></i>
+                    <h3>Liver Transplant & HPB Surgery</h3>
+                    <p>Expert liver care and transplant services.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-female"></i>
+                    <h3>Gynecology</h3>
+                    <p>Healthcare services for women.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Doctors Section -->
     <section id="doctors" class="doctors">
         <div class="container">
-            <h2>Meet Our Doctors</h2>
+            <h2>Meet Our Specialists</h2>
             <div class="doctor-cards">
                 <div class="doctor-card">
-                    <img src="vikram-kalra.png" alt="Dr. Ajay">
+                    <img src="vikram-kalra.png" alt="Dr. Vikram Kalra">
                     <h3>Dr. Vikram Kalra</h3>
                     <p>Nephrologist</p>
                     <p>Experience: 27 years</p>
-                    
+                    <p>Dr. Kalra is a leading nephrologist known for his expertise in kidney care and transplantation.</p>
+                    <a href="#" class="btn-primary">View Profile</a>
                 </div>
                 <div class="doctor-card">
-                    <img src="vivek-vij.png" alt="Dr. suresh">
+                    <img src="vivek-vij.png" alt="Dr. Vivek Vij">
                     <h3>Dr. Vivek Vij</h3>
                     <p>Liver Transplant & HPB Surgeon</p>
                     <p>Experience: 24 years</p>
-                    
+                    <p>Dr. Vij specializes in liver surgeries and is committed to improving patient outcomes.</p>
+                    <a href="#" class="btn-primary">View Profile</a>
                 </div>
                 <div class="doctor-card">
-                    <img src="shilpa-ghosh.png" alt="Dr. shilpa">
+                    <img src="shilpa-ghosh.png" alt="Dr. Shilpa Ghosh">
                     <h3>Dr. Shilpa Ghosh</h3>
                     <p>Gynecology</p>
                     <p>Experience: 25 years</p>
-                   
+                    <p>Dr. Ghosh offers comprehensive gynecological care with a focus on women's health.</p>
+                    <a href="#" class="btn-primary">View Profile</a>
                 </div>
-                <!-- Add more doctors as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Patient Testimonials</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <img src="patient1.jpg" alt="Patient 1">
+                    <h3>John Doe</h3>
+                    <p class="testimonial-text">"The care I received was exceptional. The staff was professional and attentive, making my recovery smooth and comfortable. Highly recommended!"</p>
+                    <p class="patient-details">- Heart Surgery, 2023</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="patient2.jpg" alt="Patient 2">
+                    <h3>Jane Smith</h3>
+                    <p class="testimonial-text">"I was nervous before my procedure, but the team reassured me and took excellent care of me throughout. I'm grateful for their kindness and expertise."</p>
+                    <p class="patient-details">- Knee Replacement, 2023</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="patient3.jpg" alt="Patient 3">
+                    <h3>Robert Brown</h3>
+                    <p class="testimonial-text">"From the first visit to my follow-up, I felt valued and cared for. The doctors explained everything thoroughly. Thank you for your dedication!"</p>
+                    <p class="patient-details">- Diabetes Management, 2023</p>
+                </div>
             </div>
         </div>
     </section>
     
-<!-- Appointment Form Modal -->
-   <section id="qr" class="qr">
-<div id="appointment-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeBookingForm()">&times;</span>
-        <h2>Book an Appointment</h2>
-       
-
-        <!-- Confirmation Message (Initially Hidden) -->
-        <div id="confirmation-message" style="display: none;">
-            <h3>Your appointment has been booked!</h3>
-            <p>Thank you for submitting your details. We will contact you soon.</p>
-        </div>
-    </div>
-</div>
-
-    <!-- qr section -->
-     <section id="qr" class="qr">
+    <section id="blog" class="health-tips">
         <div class="container">
-            <h2>BOOK AN APPOINTMENT </h2>
-            <div class="qr-cards">
-                <div class="qr-card">
-                    <img src="qr-code-242478555519468.png" alt="Qr">
-                    <h3>Scan The Qr For Appointment  </h3>
-                    
+            <h2>Health Tips</h2>
+            <div class="tip-cards">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Healthy Eating</h3>
+                    <p>Discover how to maintain a balanced diet with fruits, vegetables, and whole grains for overall well-being.</p>
                 </div>
-</section
-                <!-- about section -->
- <section id="about" class="about">
-    <div class="container">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Our healthcare system offers top-notch medical services provided by experienced professionals.</p>
-                <p>We prioritize patient care, offering personalized and compassionate services to ensure your health and well-being.</p>
-            </div>
-            
-            <div class="about-image">
-                <img src="about us.jpg" alt="About Us">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Regular Exercise</h3>
+                    <p>Learn the benefits of physical activity and how it can improve your mental and physical health.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Stay Hydrated</h3>
+                    <p>Understand the importance of drinking enough water and staying hydrated throughout the day.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Get Enough Sleep</h3>
+                    <p>Explore the critical role sleep plays in your health and tips for achieving better rest.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Regular Check-ups</h3>
+                    <p>Find out why routine health check-ups are essential for early detection and prevention of health issues.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-laugh"></i>
+                    </div>
+                    <h3>Mental Well-being</h3>
+                    <p>Learn techniques for managing stress and anxiety to promote a positive mindset.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    </section>
+    
+    <section id="faq" class="faq-section">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What services do you offer?</h3>
+                    <div class="faq-answer">
+                        <p>We provide a wide range of healthcare services, including primary care, specialist consultations, and health screenings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I book an appointment?</h3>
+                    <div class="faq-answer">
+                        <p>You can book an appointment online through our website or by calling our office directly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your operating hours?</h3>
+                    <div class="faq-answer">
+                        <p>Our operating hours are Monday to Friday from 8 AM to 6 PM and Saturday from 9 AM to 2 PM.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you accept insurance?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, we accept a variety of insurance plans. Please contact us for more details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What should I bring to my appointment?</h3>
+                    <div class="faq-answer">
+                        <p>Please bring your insurance card, a valid ID, and any medical records that are relevant to your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Combined Appointment and Contact Form -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <h2>Book an Appointment or Contact Us</h2>
+            <form action="https://web3forms.com/submit" method="POST" id="combined-form">
+                <input type="hidden" name="access_key" value="your-access-key-here">
+
+                <!-- User selection: appointment or contact -->
+                <label for="form-type">Are you booking an appointment or contacting us?</label>
+                <select id="form-type" name="form_type" required>
+                    <option value="appointment">Appointment</option>
+                    <option value="contact">Contact</option>
+                </select>
+
+                <!-- Form fields -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="phone" placeholder="Your Phone Number" required>
+
+                <!-- Additional field for appointment booking -->
+                <textarea id="message" name="message" placeholder="Describe your symptoms or message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
             </form>
+
+            <!-- Confirmation Message (Initially Hidden) -->
+            <div id="confirmation-message" style="display: none;">
+                <h3>Your submission has been received!</h3>
+                <p>Thank you for contacting us. We will get in touch with you soon.</p>
+            </div>
         </div>
     </section>
-    
-    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our healthcare system offers top-notch medical services provided by experienced professionals.</p>
+            <p>We prioritize patient care, offering personalized and compassionate services to ensure your health and well-being.</p>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -153,9 +257,9 @@
                 </ul>
             </div>
         </div>
-        <p>&copy; 2024 Advanced Healthcare Management System. All rights reserved.</p>
+        <p>&copy; 2024 Healthcare Management System. All rights reserve created by Jaimil oza , Jay Dholi , Shiv Bhatt
     </footer>
-   
+
     <script src="script.js"></script>
 </body>
 </html>
