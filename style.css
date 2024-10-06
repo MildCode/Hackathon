@@ -1,253 +1,322 @@
 /* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
     color: #333;
-}
-
-h1, h2, h3 {
-    color: #2c3e50;
 }
 
 .container {
     width: 90%;
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Header */
 header {
-    background: #2980b9;
-    color: white;
-    padding: 50px 0;
+    background: #007BFF;
+    color: #fff;
+    padding: 40px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color:white;
+.headerText {
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-header p {
-    font-size: 1.2rem;
-}
-
+/* Button */
 .btn-primary {
-    background: #f39c12;
-    color: white;
+    background: #ff5a5f;
+    color: #fff;
     padding: 10px 20px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    margin-top: 20px;
-}
-
-.btn-primary:hover {
-    background: #e67e22;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Services Section */
 .services {
-    padding: 50px 0;
+    background: #f4f4f4;
+    padding: 20px 0;
     text-align: center;
-}
-.HeaderText{
-    padding: 3% 0;
-    transform: translateY(17%);
-}
-.services h2 {
-    margin-bottom: 40px;
 }
 
 .service-cards {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .service-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+    text-align: center;
 }
 
 .service-card i {
     font-size: 40px;
-    color: #2980b9;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    margin-bottom: 10px;
-}
-
-.service-card p {
-    color: #7f8c8d;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
+    color: #007BFF;
 }
 
 /* Doctors Section */
 .doctors {
-    background-color: #ecf0f1;
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 .doctor-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .doctor-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
     text-align: center;
+    position: relative;
 }
 
 .doctor-card img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    max-width: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
 }
 
 .doctor-card h3 {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .doctor-card p {
-    color: #7f8c8d;
+    margin: 5px 0;
 }
 
-/* About Section */
-.about {
-    padding: 50px 0;
-    display: flex;
-    justify-content: flex-start; /* Aligns content to the left */
-    align-items: center;
-}
-
-.about-text {
-    width: 70%; /* Text takes up more space */
-}
-
-.about-text h2 {
-    margin-bottom: 20px;
-}
-
-.about-image {
-    width: 25%; /* Image takes up less space */
-    margin-right: 40px; /* Adds some spacing between the image and text */
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px 0;
+/* Appointment Section */
+.appointment {
+    padding: 20px 0;
     text-align: center;
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
+.appointment h2 {
+    margin-bottom: 20px;
+}
+/* Testimonials Section */
+.testimonials {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
 }
 
-#contact-form input, #contact-form textarea {
-    padding: 15px;
+.testimonials h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin: 10px 0;
+    color: #555;
+}
+
+.patient-details {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Health Tips Section */
+.health-tips {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.health-tips h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.tip-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tip-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(30% - 40px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tip-card:hover {
+    transform: scale(1.05);
+}
+
+.tip-icon {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.tip-card h3 {
+    font-size: 22px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    color: #333;
+}
+
+.tip-card p {
+    color: #555;
+    font-size: 16px;
+}
+/* FAQ Section */
+.faq-section {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #e7f0ff;
+}
+
+.faq-question h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #555;
+}
+
+form input,
+form textarea,
+form select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#contact-form button {
-    padding: 15px;
-    background: #2980b9;
-    color: white;
+form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#contact-form button:hover {
-    background: #3498db;
-}
-
-/* Modal for Appointment Form */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 400px;
+/* About Section */
+.about {
+    background: #f4f4f4;
+    padding: 20px 0;
     text-align: center;
 }
 
-.close-button {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#qr-code-section img {
-    max-width: 200px;
-    margin: 20px 0;
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 500px;
 }
 
 /* Footer */
 footer {
-    background-color: #2980b9;
-    color: white;
-    padding: 40px 0;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
+footer h3 {
+    margin: 0;
+}
+
 footer ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-footer ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
+footer a {
+    color: #fff;
     text-decoration: none;
 }
